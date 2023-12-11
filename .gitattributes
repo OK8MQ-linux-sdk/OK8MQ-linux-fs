@@ -1,0 +1,6 @@
+OK8MQ-linux-fs/home/forlinx/video/4kh265p24.mkv filter=lfs diff=lfs merge=lfs -text
+OK8MQ-linux-fs/home/forlinx/video/4kvp9p60.webm filter=lfs diff=lfs merge=lfs -text
+OK8MQ-linux-fs/usr/bin/dockerd filter=lfs diff=lfs merge=lfs -text
+OK8MQ-linux-fs/usr/lib/libQt5WebKit.so.5.212.0 filter=lfs diff=lfs merge=lfs -text
+OK8MQ-linux-fs/home/forlinx/video/1080p_60fps_h264.mp4 filter=lfs diff=lfs merge=lfs -text
+OK8MQ-linux-fs/usr/lib/libQt5WebEngineCore.so.5.13.2 filter=lfs diff=lfs merge=lfs -text
