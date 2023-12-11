@@ -1,0 +1,2 @@
+arch_compat: imx8mqevk: all any noarch aarch64 aarch64_mx8m imx8mqevk
+buildarch_compat: imx8mqevk: noarch

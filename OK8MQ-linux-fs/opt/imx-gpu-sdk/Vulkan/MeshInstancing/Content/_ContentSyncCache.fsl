@@ -1,0 +1,18 @@
+# FslContentSync cache file
+# Format: 3
+# Created by FslContentSync V0.2.9
+Models\-1\0\0
+Models/Rock\-1\0\0
+Textures\-1\0\0
+Textures/TextureArray\-1\0\0
+Textures/TextureArray/Rocks\-1\0\0
+shaders\-1\0\0
+Models/Rock/License.json\133\2020-05-26T08:26:56.868277\f7b71ad88159f59271b33c62097ffe081546ddcfd59eb8814c77738dc5dcd0a1
+Models/Rock/rock01.dae\28188\2020-05-26T08:26:56.868277\34dedfb782b276f6328bb99f72966071a7d6e12a37282114632ce801642693c6
+Textures/TextureArray/Rocks/License.json\133\2020-05-26T08:26:56.868277\f7b71ad88159f59271b33c62097ffe081546ddcfd59eb8814c77738dc5dcd0a1
+Textures/TextureArray/Rocks/texturearray_rocks_bc3.ktx\1747896\2020-05-26T08:26:56.872277\a8f116fb09c606c305393b4f67669fd64f14f50568ce3f24529f8e5dab068ea5
+Textures/TextureArray/Rocks/texturearray_rocks_etc2.ktx\874016\2020-05-26T08:26:56.892278\5a194686413cf8e44559788abbcd10b816650ba1e0581a6de2cdff61dd0d12bb
+shaders/instancing.frag.spv\2348\2020-05-25T08:27:41.917428\43996fdf5d85e4a14116bd5845f11792c412b7385efaf2e15961b88a0d897b49
+shaders/instancing.vert.spv\5004\2020-05-25T08:27:41.917428\0aedfc2f2f1167fd764fb6114cf6732543a3f7d011c78b294a45bde82c936893
+shaders/textoverlay.frag.spv\836\2020-05-25T08:27:41.917428\fc340cfb1df4617900e400772e6ecacd35f0ca41355cf46dbf95937981e3bfbc
+shaders/textoverlay.vert.spv\764\2020-05-25T08:27:41.917428\eef3540d67a5e87bf2f3b1c389734a5c49713f27c1cd1b1059db72a30547d8d7

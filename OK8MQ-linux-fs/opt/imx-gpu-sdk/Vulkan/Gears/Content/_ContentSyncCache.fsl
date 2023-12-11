@@ -1,0 +1,8 @@
+# FslContentSync cache file
+# Format: 3
+# Created by FslContentSync V0.2.9
+shaders\-1\0\0
+shaders/gears.frag.spv\1868\2020-05-25T08:27:40.269397\303dae8493ec3c34f0c57561cd5a1b97b6fd1e18614cf8c0be6ccdbc3cbca368
+shaders/gears.vert.spv\2892\2020-05-25T08:27:40.269397\31a2b343d6f89eae41a135f08f744c25beb5e9f532c5fc4301fe598cb65cfde9
+shaders/textoverlay.frag.spv\836\2020-05-25T08:27:40.269397\fc340cfb1df4617900e400772e6ecacd35f0ca41355cf46dbf95937981e3bfbc
+shaders/textoverlay.vert.spv\764\2020-05-25T08:27:40.269397\eef3540d67a5e87bf2f3b1c389734a5c49713f27c1cd1b1059db72a30547d8d7

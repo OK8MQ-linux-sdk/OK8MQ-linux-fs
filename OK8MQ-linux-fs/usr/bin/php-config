@@ -1,0 +1,90 @@
+#! /bin/sh
+
+SED="sed"
+prefix="/usr"
+datarootdir="/usr/php"
+exec_prefix="/usr"
+version="7.3.9"
+vernum="70309"
+include_dir="/usr/include/php"
+includes="-I$include_dir -I$include_dir/main -I$include_dir/TSRM -I$include_dir/Zend -I$include_dir/ext -I$include_dir/ext/date/lib"
+ldflags=" -L/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/lib/../lib -L/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/lib"
+libs="-lcrypt  -lc-client  -lcrypt -lrt -lsqlite3 -lcrypt -lpam -lbz2 -lz -lsqlite3 -lm  -lxml2 -lssl -lcrypto -lxml2 -lssl -lcrypto -lxml2 -lcrypt -lxml2 -lxml2 -lxml2 -lxml2 -lssl -lcrypto -lcrypt "
+extension_dir='/usr/lib/php7/extensions/no-debug-non-zts-20180731'
+man_dir=`eval echo /usr/share/man`
+program_prefix=""
+program_suffix=""
+exe_extension=""
+php_cli_binary=NONE
+php_cgi_binary=NONE
+configure_options=" '--build=x86_64-linux' '--host=aarch64-poky-linux' '--target=aarch64-poky-linux' '--prefix=/usr' '--exec_prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--libexecdir=/usr/libexec' '--datadir=/usr/share' '--sysconfdir=/etc' '--sharedstatedir=/com' '--localstatedir=/var' '--libdir=/usr/lib' '--includedir=/usr/include' '--oldincludedir=/usr/include' '--infodir=/usr/share/info' '--mandir=/usr/share/man' '--disable-silent-rules' '--disable-dependency-tracking' '--with-libtool-sysroot=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot' '--enable-mbstring' '--enable-wddx' '--enable-fpm' '--with-libdir=lib' '--with-gettext=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/lib/..' '--with-zlib=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/lib/..' '--with-iconv=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/lib/..' '--with-bz2=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr' '--with-config-file-path=/etc/php/apache2-php7' 'ac_cv_c_bigendian_php=no' '--enable-sockets' '--enable-pcntl' '--enable-shared' '--disable-rpath' '--with-pic' '--libdir=/usr/lib/php7' '--with-imap=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot' '--with-imap-ssl=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot' '--enable-ipv6' '--with-mysqli=mysqlnd' '--with-pdo-mysql=mysqlnd' '--enable-opcache' '--with-openssl' '--without-pgsql' '--disable-soap' '--with-sqlite3=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/lib/..' '--with-pdo-sqlite=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/lib/..' '--with-valgrind=no' '--enable-nls' 'build_alias=x86_64-linux' 'host_alias=aarch64-poky-linux' 'target_alias=aarch64-poky-linux' 'CC=aarch64-poky-linux-gcc --sysroot=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot' 'CFLAGS= -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0=/usr/src/debug/php/7.3.9-r0 -fdebug-prefix-map=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0=/usr/src/debug/php/7.3.9-r0 -fdebug-prefix-map=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot= -fdebug-prefix-map=FIXMESTAGINGDIRHOST= -D_GNU_SOURCE -g -DPTYS_ARE_GETPT -DPTYS_ARE_SEARCHED -I/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/include/apache2' 'CPPFLAGS=' 'CPP=aarch64-poky-linux-gcc -E --sysroot=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot ' 'PKG_CONFIG_PATH=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/lib/pkgconfig:/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/share/pkgconfig' 'PKG_CONFIG_LIBDIR=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot/usr/lib/pkgconfig' 'CXX=aarch64-poky-linux-g++ --sysroot=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot' 'CXXFLAGS= -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0=/usr/src/debug/php/7.3.9-r0 -fdebug-prefix-map=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0=/usr/src/debug/php/7.3.9-r0 -fdebug-prefix-map=/home/lixinguo/workspace/imx-yocto-bsp-5.4.3/buildxwayland/tmp/work/aarch64-poky-linux/php/7.3.9-r0/recipe-sysroot= -fdebug-prefix-map=FIXMESTAGINGDIRHOST= -fvisibility-inlines-hidden'"
+php_sapis=" cli fpm phpdbg cgi"
+
+# Set php_cli_binary and php_cgi_binary if available
+for sapi in $php_sapis; do
+  case $sapi in
+  cli)
+    php_cli_binary="/usr/bin/${program_prefix}php${program_suffix}${exe_extension}"
+    ;;
+  cgi)
+    php_cgi_binary="/usr/bin/${program_prefix}php-cgi${program_suffix}${exe_extension}"
+    ;;
+  esac
+done
+
+# Determine which (if any) php binary is available
+if test "$php_cli_binary" != "NONE"; then
+  php_binary="$php_cli_binary"
+else
+  php_binary="$php_cgi_binary"
+fi
+
+# Remove quotes
+configure_options=`echo $configure_options | $SED -e "s#'##g"`
+
+case "$1" in
+--prefix)
+  echo $prefix;;
+--includes)
+  echo $includes;;
+--ldflags)
+  echo $ldflags;;
+--libs)
+  echo $libs;;
+--extension-dir)
+  echo $extension_dir;;
+--include-dir)
+  echo $include_dir;;
+--php-binary)
+  echo $php_binary;;
+--php-sapis)
+  echo $php_sapis;;
+--configure-options)
+  echo $configure_options;;
+--man-dir)
+  echo $man_dir;;
+--version)
+  echo $version;;
+--vernum)
+  echo $vernum;;
+*)
+  cat << EOF
+Usage: $0 [OPTION]
+Options:
+  --prefix            [$prefix]
+  --includes          [$includes]
+  --ldflags           [$ldflags]
+  --libs              [$libs]
+  --extension-dir     [$extension_dir]
+  --include-dir       [$include_dir]
+  --man-dir           [$man_dir]
+  --php-binary        [$php_binary]
+  --php-sapis         [$php_sapis]
+  --configure-options [$configure_options]
+  --version           [$version]
+  --vernum            [$vernum]
+EOF
+  exit 1;;
+esac
+
+exit 0

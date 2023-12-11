@@ -1,0 +1,8 @@
+[Unit]
+Description=Forlinx Auto RUN
+After=basic.service X.service thermal-zone-init.service
+[Service]
+ExecStart=/etc/autorun.sh
+[Install]
+WantedBy=multi-user.target
+

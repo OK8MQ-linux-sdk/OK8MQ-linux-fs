@@ -1,0 +1,14 @@
+# FslContentSync cache file
+# Format: 3
+# Created by FslContentSync V0.2.9
+Textures\-1\0\0
+Textures/TextureArray\-1\0\0
+Textures/TextureArray/Test\-1\0\0
+shaders\-1\0\0
+Textures/TextureArray/Test/License.json\133\2020-05-26T08:26:46.319889\f7b71ad88159f59271b33c62097ffe081546ddcfd59eb8814c77738dc5dcd0a1
+Textures/TextureArray/Test/texturearray_bc3.ktx\458852\2020-05-26T08:26:46.323889\b9dc2051d2a878e190a2fe21e5d3930ed1a869ce8121b0781bd22351bb8431e5
+Textures/TextureArray/Test/texturearray_etc2.ktx\229476\2020-05-26T08:26:46.327889\b17c862a416ee87a669c6aa269ed868eddea143aa655f075e0021fbe8aa938bf
+shaders/instancing.frag.spv\640\2020-05-25T08:28:00.117773\ad23763ef3108efb8256e1e98d2e634b2ae8af8df785d9c74cfc51c2600a60a8
+shaders/instancing.vert.spv\2072\2020-05-25T08:28:00.117773\19e2cdaae7bbfcf4b61904d79f5be4ce6d986740481869abc00d3d6c41a495b8
+shaders/textoverlay.frag.spv\836\2020-05-25T08:28:00.117773\fc340cfb1df4617900e400772e6ecacd35f0ca41355cf46dbf95937981e3bfbc
+shaders/textoverlay.vert.spv\764\2020-05-25T08:28:00.117773\eef3540d67a5e87bf2f3b1c389734a5c49713f27c1cd1b1059db72a30547d8d7

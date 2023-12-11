@@ -1,0 +1,14 @@
+[Unit]
+Description=telnetd
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/bin/busybox telnetd &
+StandardOutput=tty
+KillMode=process
+KillSignal=SIGKILL
+SendSIGKILL=yes
+
+[Install]
+WantedBy=multi-user.target

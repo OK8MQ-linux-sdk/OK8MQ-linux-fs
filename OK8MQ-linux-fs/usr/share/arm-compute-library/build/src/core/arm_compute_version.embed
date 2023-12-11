@@ -1,0 +1,1 @@
+"arm_compute_version=v19.08 Build options: {'PREFIX': '/usr', 'prefix': '/usr', 'Werror': '0', 'extra_cxx_flags': '-fPIC', 'build': 'native', 'benchmark_tests': '0', 'embed_kernels': '1', 'gles_compute': '0', 'neon': '1', 'opencl': '1', 'validation_tests': '0', 'arch': 'arm64-v8a'} Git hash=b'16ed8b15fa8d9a1e598c80874da423ab23a7ae1d'"
